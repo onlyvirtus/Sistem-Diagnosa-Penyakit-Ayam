@@ -1,0 +1,372 @@
+html {
+    scroll-behavior: smooth; /* Mengaktifkan smooth scrolling untuk seluruh halaman */
+  }
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    transition: all 1s;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.intro1{
+    margin-top: 4em;
+    align-items: center;
+    justify-content: center;
+    margin-inline-start: 5em;
+    margin-inline-end: 1em;
+    
+}
+
+.bg_peternak,.bg_dokter{
+    display: flex;
+    margin-top: 0em;
+    align-items: center;
+    justify-content: center;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+
+
+.bg_peternak a,.intro1 a,.bg_dokter a{
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+.bg_peternak:hover #isipeternak, .bg_dokter:hover #isidokter{
+    display: block;
+    transition: all 2s;
+}
+#isipeternak, #isidokter {
+    display: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+    font-size: 15px;
+    transition: all 2s;
+  }
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
+
+
+#gambardokter, #gambarpeternak {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 2cm;
+    border-style: solid;
+    border-color: #000;
+    display: block;
+    background-color: #000;
+    filter: brightness(50%);
+}
+.bg_dokter:hover #gambardokter, .bg_peternak:hover #gambarpeternak {
+    filter: brightness(90%);
+}
+.container11 {
+    position: relative;
+    display: inline-block;
+}
+
+.pagebreak{
+    border-bottom: px solid #000000;
+}
+
+.textdokter, .textpeternak {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textdokter a, .textpeternak a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9  );
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #00000000;
+	margin-inline-start: 30rem;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0;
+}
+.navbar li{
+    border-radius: 10cm;
+}
+.menu{
+	margin-left: 17cm;
+	display: flex;
+	list-style: none;
+	padding: 0;
+    transition: all 1s;
+}
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+    background-color: #000000;
+    border-radius: 10cm;
+    
+}
+.menu li a{
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: -24rem;
+    background-color: #000000;
+    border-radius: 10cm;
+}
+#ayamsehat{
+    font-weight:  bold;
+    font-size: 110%;
+    font-family:"Arial";
+    margin-left: -8cm;
+    position: relative;
+    color: #000000;
+    border-radius: 10cm;
+    padding: 1px;
+    text-decoration: none;
+}
+.container1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.menu li:hover{
+    box-shadow: inset;
+    background-color: #0084ff00;
+}
+.menu li:hover a{
+    color: black;
+}
+
+/*   */
+/* INTRO */
+.intro1{
+    margin-top: 3rem;
+    text-align: justify;
+}
+.intro2{
+    margin-top: 3cm;
+    text-align: center;
+}
+ 
+#textintro{
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 80px;
+    transition: 1s;
+    text-align: left;
+}
+#isiintro p{
+    font-weight: lighter;
+    text-align: left;
+    font-family: "Arial";
+    font-size: 15px;
+    transition: 1s;
+    margin-top: -2cm;
+    margin-left: -1cm;
+    align-items: center;
+    color: rgb(0, 0, 0);
+
+    border-radius: 2cm;
+    border-style: outset;
+    border-color: #000;
+    padding: 1rem;
+}
+
+#textintro2{
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 50px;
+    transition: 1s;
+    margin-top: -2px;
+}
+
+
+ 
+.container1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+ 
+ 
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+ 
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #212121;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
+}
+
+.bg_latarbelakang,.bg_tujuan{
+    
+    transform: translateY();
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    transition: 1s;
+    overflow: hidden;
+
+
+    margin-top: 0;
+    width:auto
+}
+
+#textlb,#texttj{
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 60px;
+    display: inline-block; 
+    margin-right: 5rem;
+    margin-left: 5rem;   
+    position: absolute;
+    transition: 1s;
+}
+
+
+
+#isilb p{
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    transform: translateY(200px);
+    object-fit: cover;
+    opacity:0;
+    transition: all 1s;
+    z-index: 1;
+    text-align: center ;
+}
+#isitj p{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    transform: translateX(1050px);
+    object-fit: cover;
+    opacity:0;
+    transition: all 1s;
+    z-index: 1;
+    text-align: justify ;
+    border-radius: 1cm;
+}
+#isipeternak{
+    display: none;
+}
+
+
+
+/* border */
+.borderbg{
+    border-radius: 1cm;
+    border-color: #000;
+    border-style: outset;
+    
+    margin-left: 5px;
+    
+    padding-bottom: 4cm;
+}
+
+/* background */
+.bg_latarbelakang:hover #isilb p{
+    transform: translateY(40px);
+    opacity: 1;
+    transition: 1s;
+    background-color: #000000;
+    padding: 1rem;
+    color: white;
+}
+
+.bg_latarbelakang:hover #textlb {
+    transform: translateY(-80px);
+    opacity: 1;
+    transition: 1s;
+    font-size: 70px;
+}
+
+.bg_tujuan:hover #isitj p{
+    transform: translateX(300px);
+    opacity: 1;
+    transition: 1s;
+    background-color: #000000;
+    padding: 1rem;
+    color: white;
+}
+
+.bg_tujuan:hover #texttj {
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: 1s;
+    font-size: 70px;
+}
+@media (max-width: 600px) {
+    .ct_definisi {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}

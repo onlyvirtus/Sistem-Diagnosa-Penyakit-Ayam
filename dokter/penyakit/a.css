@@ -1,0 +1,278 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0085FF;
+}
+/* NAVBAR */
+.navbar{
+    background-color: #00000000;
+	margin-inline-start: 30rem;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0;
+}
+.navbar li{
+    border-radius: 10cm;
+}
+.menu{
+	margin-left: 19cm;
+	display: flex;
+	list-style: none;
+	padding: 0;
+    transition: all 1s;
+}
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+    background-color: #00000025;
+    border-radius: 10cm;
+}
+.menu li a{
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#profile{
+    
+	padding-left: 0;
+	margin-right: 10px;
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+#profile:hover{
+    border-radius: 0cm;
+
+    border-style: dotted;
+    border-top: none;
+    border-inline: none;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: -24rem;
+    background-color: #ffffff00;
+    border-radius: 10cm;
+}
+#ayamsehat{
+    font-weight:  bold;
+    font-size: 110%;
+    font-family:"Arial";
+    margin-left: -8cm;
+    position: relative;
+    color: #ffffff;
+    border-radius: 10cm;
+    padding: 1px;
+    text-decoration: none;
+}
+.container1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.menu li:hover{
+    box-shadow: inset;
+    background-color: #0084ff00;
+}
+.menu li:hover a{
+    
+    transition: 1s;
+}
+
+
+/*   */
+
+/* container0 */
+.container0{
+    padding: 1cm;
+}
+/*  */
+
+/* tabel penyakit */
+.container2{
+    margin-top: 1cm;
+    
+    padding-bottom: 2cm;
+    align-items: center;
+    text-align: center;
+
+    border-style: dotted;
+    border-top-color: white;
+    border-inline: none;
+    border-bottom: none;
+}
+.edit-penyakit {
+    position: absolute;
+    top: 14cm; 
+    right: 16cm; 
+    z-index: 1000; 
+
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.listpenyakit{
+    display: flex;
+    
+}
+.penyakit-item{
+    border-style: solid;
+    margin: 1cm;
+    border-color: white;
+}
+.listpenyakit h2{
+    color: white;
+    
+}
+#judulpenyakit{
+    margin-bottom: -15px;
+}
+#namailmiah{
+    font-style: italic;
+}
+.listpenyakit table{
+    border-style: none;
+    border-color: white;
+    margin-inline: 10cm;
+    
+}
+
+.listpenyakit th, .listpenyakit td {
+    border: 2px solid #00000000; 
+    padding: 10px;
+    text-align: center;
+    border-style: none;
+    margin-inline:1cm;
+}
+.listpenyakit td{
+    border-color: white;
+    
+}
+
+.listpenyakit th{
+    border-color: white;
+}
+.gejala-solusi h3{
+    margin-bottom: -10px;
+    
+}
+.gejala-solusi p{
+    margin-inline: 20px;
+    text-align: justify;
+}
+#keterangan{
+    text-align: justify;
+    margin-inline: 20px;
+}
+
+.penyakit-item img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    background-color: rgb(201, 201, 201);
+    border-radius: 1cm;
+    border-style: solid;
+    border-color: white;
+    margin-inline: 3cm;
+    margin-top: 2cm;
+}   
+
+.penyakit-info p{
+    text-align: center;
+}
+
+.listpenyakit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.isipenyakit{
+    position: relative;
+}
+
+#close-dialog, #submit{
+    align-items: center;
+    margin-inline: 5px;
+}
+/*  */
+
+
+/* judul */
+#judul{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+
+/* dialog */
+#form-tambah p{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+
+#btn-click,#edit{
+    border-radius: 10cm;
+    padding: 5px;
+    margin-inline: 15px;
+    cursor: pointer;
+    border-style: solid;
+}
+
+#btn-click:hover,#edit:hover{
+    background-color: black;
+    color: white;
+}
+
+.buttonform{
+    display: flex;
+}
+
+.buttonform li{
+    margin: 0;
+    list-style: none;
+    align-items:center
+}
+
+
+/*  */
+
+/* dialog */
+#dialog{
+    max-height: 60%;
+    max-width: 250px;
+    overflow-y: auto;
+    padding: 2cm;
+}
+
+
+#dialog::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  #dialog::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px; 
+  }
+  
+  #dialog::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  #idgejala,#namagejala,#nilaicf {
+    font-size: 13px; 
+  }
+/*  */

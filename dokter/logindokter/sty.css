@@ -1,0 +1,166 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0085FF;
+    transition: all 1s;
+}
+/* NAVBAR */
+.navbar{
+    background-color: #00000000;
+	margin-inline-start: 30rem;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0;
+}
+.navbar li{
+    border-radius: 10cm;
+}
+.menu{
+	margin-left: 17cm;
+	display: flex;
+	list-style: none;
+	padding: 0;
+    transition: all 1s;
+}
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+    background-color: #00000025;
+    border-radius: 10cm;
+    
+}
+.menu li a{
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: -24rem;
+    background-color: #ffffff00;
+    border-radius: 10cm;
+}
+#ayamsehat{
+    font-weight:  bold;
+    font-size: 110%;
+    font-family:"Arial";
+    margin-left: -8cm;
+    position: relative;
+    color: #ffffff;
+    border-radius: 10cm;
+    padding: 1px;
+    text-decoration: none;
+}
+.container1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-top: 9px;
+
+}
+
+.menu li:hover{
+    box-shadow: inset;
+    background-color: #0084ff00;
+}
+.menu li:hover a{
+    
+    transition: 1s;
+}
+
+/*   */
+ 
+.container0{
+    padding: 1.5cm;
+}
+
+
+/* form */
+
+.textlogin p{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0cm;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    
+}
+.form{
+    
+    border-radius: 1cm;
+    border-style:dotted;
+    border-color: white;
+    
+  justify-content: center;
+  align-items: center;
+
+  margin-inline: 10cm;
+  padding: 2cm;
+}
+
+#isi{
+    margin-inline: 6cm;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.textlogin {
+    text-align: center;
+  }
+
+#email,#password{
+    border-radius: 0.3cm;
+    border-style: double;
+    border-color: black;
+    
+}
+input[type="email"], select ,input[type="password"], select{
+background-color: #ffffff00;
+border-radius: 1cm;
+padding: 6px;
+color: white;
+}
+
+input::placeholder {
+    color: white;
+  }
+input[type="button"], select{
+    margin-inline: 15px;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border-radius: 3cm;
+    border-style:solid;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type="submit"], select{
+    margin-inline: 15px;
+    background-color: rgba(0, 255, 26, 0.495);
+    color: white;
+    border-radius: 3cm;
+    border-style:solid;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type="submit"]:hover, select{
+    background-color: rgb(0, 255, 26);
+    color: black;
+    transition: all 1s;
+}
+input[type="button"]:hover, select{
+    background-color: rgb(255, 0, 0);
+    color: black;
+    transition: all 1s;
+}
+
+.tombol{
+    margin-top: 12px;
+    display: flex;
+}
+/*  */

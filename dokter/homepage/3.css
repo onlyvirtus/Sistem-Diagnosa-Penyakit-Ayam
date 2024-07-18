@@ -1,0 +1,211 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0085FF;
+}
+
+
+
+.rectangle {
+    position: absolute;
+width: 1412px;
+height: 374px;
+left: 0px;
+top: 177px;
+
+border: 2px solid #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+
+#hellodokter{
+position: absolute;
+width: 521px;
+height: 78px;
+left: 231px;
+top: 27px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 78px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+#namadokter{
+position: absolute;
+width: 347px;
+height: 59px;
+left: 405px;
+top: 104px;
+text-align: left;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 59px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.rectangle a{
+    text-align: left;
+}
+.footer{
+    position: relative;
+    display: flex;
+align-items: center;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #00000000;
+	margin-inline-start: 30rem;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0;
+}
+.navbar li{
+    border-radius: 10cm;
+}
+.menu{
+	margin-left: 19cm;
+	display: flex;
+	list-style: none;
+	padding: 0;
+    transition: all 1s;
+}
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+    background-color: #00000025;
+    border-radius: 10cm;
+}
+.menu li a{
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#profile{
+    
+	padding-left: 0;
+	margin-right: 10px;
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+#profile:hover{
+    border-radius: 0cm;
+
+    border-style: dotted;
+    border-top: none;
+    border-inline: none;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: -24rem;
+    background-color: #ffffff00;
+    border-radius: 10cm;
+}
+#ayamsehat{
+    font-weight:  bold;
+    font-size: 110%;
+    font-family:"Arial";
+    margin-left: -8cm;
+    position: relative;
+    color: #ffffff;
+    border-radius: 10cm;
+    padding: 1px;
+    text-decoration: none;
+}
+.container1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.menu li:hover{
+    box-shadow: inset;
+    background-color: #0084ff00;
+}
+.menu li:hover a{
+    
+    transition: 1s;
+}
+
+#gambar{
+    display: block;
+    position: absolute;
+
+    width: 450px;
+    height: 350px;
+    margin-top: 3.5cm;
+    margin-left: 10cm;
+    border-radius: 1cm;
+    border-style: solid;
+}
+
+/*   */
+
+/* button */
+
+
+
+.button{
+	display: flex;
+    position: absolute;
+	list-style: none;
+	padding: 0;
+    transform: none;
+    transition: 1s;
+    left: 29%;
+    top: 50%;
+}
+.button a:hover{
+    border-radius: 10cm;
+    background-color: #ffffff;
+    transform: none;
+    transition: 1s;
+}
+.button a:hover li{
+    color: #0085FF;
+}
+#periksa,#penyakit{
+    margin-right: 3cm;
+    border-bottom: #ffffff;
+    border-bottom-style: solid;
+    padding: 10px;
+}
+.button a li{
+    text-decoration: none;
+    color: white;
+}
+.button a{
+    text-decoration: none;
+    transform: none;
+    transition: 1s;
+    
+}
+/*  */

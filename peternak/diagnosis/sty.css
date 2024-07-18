@@ -1,0 +1,273 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    transition: all 1s;
+}
+
+
+
+
+header a {
+    padding: 10px 40px; 
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 0.3s;
+}
+
+header a:hover {
+    background-color: #0044ff;
+    color: white;
+}
+
+
+/* NAVBAR */
+.navbar{
+    background-color: #00000000;
+	margin-inline-start: 30rem;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0;
+}
+.navbar li{
+    border-radius: 10cm;
+}
+.menu{
+	margin-left: 17cm;
+	display: flex;
+	list-style: none;
+	padding: 0;
+    transition: all 1s;
+}
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+    background-color: #000000;
+    border-radius: 10cm;
+    
+}
+.menu li a{
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: -24rem;
+    background-color: #000000;
+    border-radius: 10cm;
+}
+#ayamsehat{
+    font-weight:  bold;
+    font-size: 110%;
+    font-family:"Arial";
+    margin-left: -8cm;
+    position: relative;
+    color: #000000;
+    border-radius: 10cm;
+    padding: 1px;
+    text-decoration: none;
+}
+.container1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.menu li:hover{
+    box-shadow: inset;
+    background-color: #0084ff00;
+}
+.menu li:hover a{
+    color: black;
+}
+
+/*   */
+ 
+.container0{
+    padding: 1.5cm;
+}
+/* isi */
+.container2{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0cm;
+    padding-bottom: 3cm;
+    transition: all 1s;
+}
+.intro p{
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 50px;
+    transition: 1s;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: all 2s;
+    text-shadow:
+        -1px -1px 0 #000000,
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000;
+}
+/*  */
+
+/* button */
+.button{
+    align-items: center;
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 20px;
+
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border-radius: 10cm;
+}
+
+
+.button #kembali{
+    margin-inline-start: 10cm;
+}
+/*  */
+/* judul */
+#judul{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    background-color: #000;
+    color: white;
+}
+#subjudul{
+    font-weight: bold;
+    text-align: center;
+}
+/*  */
+
+/* Style untuk tabel */
+.table{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+.keterangan-nilai-cf{
+    position: absolute;
+    top: 35%;
+    left: 77%;
+    z-index: 999;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2cm;
+    font-size: 10px;
+}
+  
+  .table th, .table td{
+    border: 1px solid #000000; 
+    padding: 8px; 
+    text-align: left;
+  }
+  .keterangan-nilai-cf th, .keterangan-nilai-cf td{
+    padding: 8px;
+  }
+
+  #tingkatcf,#nilaicf{
+    background-color: #a3a3a3;
+  }
+  
+  .table th{
+    background-color: #b3b3b3; 
+  }
+  .keterangan-nilai-cf th {
+    background-color: #ffffff;
+    border-style:ridge;
+    border-color: #000;
+  }
+  #keterangan{
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  
+  /* Style untuk checkbox */
+  input[type="checkbox"] {
+    width: 16px; 
+    height: 16px; 
+    
+  }
+  
+  /* Style untuk dropdown */
+  select[name^="cf_user"] {
+    width: 150px;
+    padding: 5px; 
+    border: 1px solid #ccc; 
+  }
+  
+  .placeholder {
+    color: lightgray;
+  }
+  
+  .placeholder-cf {
+    display: none;
+  }
+
+  #hasil {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-inline: 18cm;
+    margin-block: 1cm;
+    margin-bottom: 3cm;
+  }
+
+
+/* hasil diagnosis */
+.hasil-diagnosis{
+    margin-inline: 3cm;
+}
+
+/*  */
+
+
+
+
+
+
+
+
+ 
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+ 
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #212121;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
+}
